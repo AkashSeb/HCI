@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Mobile Keypad Design</title>
+  <style>
+    /* Basic styling for the mobile keypad */
+    .keypad {
+      display: grid;
+      grid-template-columns: repeat(3,0fr);
+      gap: 5px;
+      margin-left: 100px;
+      margin-right: 100px;
+    }
+
+ .key {
+      padding:10px;
+      font-size: 18px;
+      text-align: center;
+      background-color: red;
+      border-radius: 5px;
+      width: 75px;
+      color: white;
+    }
+    .num {
+      margin-bottom: 20px;
+    }
+    input {
+      width: 230px;
+      height: 40px;
+      font-size: 30px;
+      margin-left: 100px;
+    }
+</style>
+
+   <script>
+    function appendNumber(number) {
+      var input = document.getElementById("phone");
+      input.value += number;
+    }
+  </script>
+
+</head>
+<body>
+  <h1>Mobile Keypad Design</h1>
+  <div class='num'>
+    <input type="tel" id="phone" name='phone'>
+  </div>
+  <div class="keypad">
+    <button class="key" onclick="appendNumber(1)">1</button> 
+    <button class="key" onclick="appendNumber(2)">2</button>
+    <button class="key" onclick="appendNumber(3)">3</button>
+    <button class="key" onclick="appendNumber(4)">4</button>
+    <button class="key" onclick="appendNumber(5)">5</button>
+    <button class="key" onclick="appendNumber(6)">6</button>
+    <button class="key" onclick="appendNumber(7)">7</button>
+    <button class="key" onclick="appendNumber(8)">8</button>
+    <button class="key" onclick="appendNumber(9)">9</button>
+    <button class="key" onclick="appendNumber('*')">*</button>
+    <button class="key" onclick="appendNumber(0)">0</button>
+    <button class="key" onclick="appendNumber('#')">#</button>
+  </div>
+  
+
+
+</body>
+</html>
