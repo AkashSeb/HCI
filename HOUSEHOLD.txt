@@ -1,33 +1,55 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>ATM Interface</title>
-  <style>
-    body {font-family: Arial, sans-serif; text-align: center;}
-    .container {margin: 50px auto; width: 300px;}
-    .input-group {margin-bottom: 20px;}
-    .input-group label {display: block; text-align: left; margin-bottom: 5px;}
-    .input-group input {width: 100%; padding: 5px; font-size: 16px; border-radius: 5px; border: 1px solid #ccc;}
-    .button {background-color: #4CAF50; color: white; padding: 10px 20px; font-size: 16px; border: none; border-radius: 5px; cursor: pointer;}
-    .button:hover {background-color: #45a049;}
-  </style>
+<title>Household Items Ordering Menu</title>
+<style>
+/* Basic styling for the menu */
+ul {
+list-style-type: none;
+}
+li {
+padding: 10px;
+}
+.submenu {
+display: none;
+}
+/* Show submenus on hover */
+li:hover .submenu {
+display: block;
+}
+</style>
 </head>
 <body>
-  <div class="container">
-    <h1>ATM Interface</h1>
-    <form>
-      <div class="input-group">
-        <label for="account">Account Number</label>
-        <input type="text" id="account" name="account" placeholder="Enter account number">
-      </div>
-      <div class="input-group">
-        <label for="pin">PIN</label>
-        <input type="password" id="pin" name="pin" placeholder="Enter PIN">
-      </div>
-      <div class="input-group">
-        <input type="submit" value="Login" class="button">
-      </div>
-    </form>
-  </div>
+<h1>Household Items Ordering Menu</h1>
+<ul>
+<li>Electronics
+<ul class="submenu">
+<li>TV</li>
+<li>Refrigerator</li>
+<li>Washing Machine</li>
+</ul>
+</li>
+<li>Furniture
+<ul class="submenu">
+<li>Sofa</li>
+<li>Bed</li>
+<li>Dining Table</li>
+</ul>
+</li>
+<li>Kitchen Appliances
+<ul class="submenu">
+<li>Microwave Oven</li>
+<li>Coffee Maker</li>
+<li>Toaster</li>
+</ul>
+</li>
+<li>Home Decor
+<ul class="submenu">
+<li>Rugs</li>
+<li>Curtains</li>
+<li>Wall Art</li>
+</ul>
+</li>
+</ul>
 </body>
 </html>
